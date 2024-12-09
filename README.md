@@ -28,12 +28,12 @@ Ensure you have the following installed:
 3. Configure environment variables:
 Create a .env file in the root directory and configure the following:
 ```bash
-PORT=3000
-DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=yourdatabase
+DB_PASS=yourpassword
+DB_NAME=mvc_app_db
+DB_HOST=127.0.0.1
 DB_DIALECT=mysql
+DB_PORT=3306
 ```
 4. Run database migrations:
 ```bash
@@ -47,16 +47,16 @@ nodemon app.js
 The server will run on http://localhost:3000.
 ## 🗂️ Project Structure
 ```bash
-├── config/         # Configuration files (e.g., Sequelize config)
-├── controllers/    # Route handlers
-├── middlewares/    # Custom middleware functions
-├── migrations/     # Database migrations
+├── config/         # Configuration for Sequelize and database
+├── controllers/    # Route handler logic
 ├── models/         # Sequelize models
-├── routes/         # Route definitions
-├── utils/          # Utility functions
-├── .env.example    # Example environment variables file
-├── package.json    # Project metadata and dependencies
-└── README.md       # Project documentation
+├── routes/         # API routes
+├── .env            # Environment variables
+├── .gitignore      # Ignored files (e.g., node_modules, .env)
+├── README.md       # Project documentation
+├── app.js          # Application entry point
+├── package.json    # Project dependencies and scripts
+└── package-lock.json # Dependency lockfile
 ```
 ## 🤝 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
