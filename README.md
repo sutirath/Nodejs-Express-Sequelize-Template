@@ -61,9 +61,18 @@ The server will run on http://localhost:3000.
 ## 🤝 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 1. Fork the repository.
-2. Create a feature branch (git checkout -b feature/YourFeature).
-3. Commit your changes (git commit -m 'Add some feature').
-4. Push to the branch (git push origin feature/YourFeature).
+2. Create a feature branch.
+```bash
+git checkout -b feature/YourFeature
+```
+3. Commit your changes.
+```bash
+git commit -m 'Add some feature'
+```
+4. Push to the branch.
+```bash
+git push origin feature/YourFeature
+```
 5. Open a Pull Request.
 
 🎉 Happy coding!
